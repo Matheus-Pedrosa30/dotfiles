@@ -26,3 +26,6 @@ config/themes/*/wallpaper/*.png
 # Runtime/cache directories, if scripts add them later
 .cache/
 tmp/
+
+# Unintended theme commit (for now!)
+config/themes/*
