@@ -18,10 +18,10 @@ end
 function slugify
     set raw_name $argv[1]
     set slug (string lower -- "$raw_name")
-    set slug (string replace -ra '[^a-z0-9[:space:]-]' '' -- "$slug")
-    set slug (string replace -ra '[[:space:]]+' '-' -- "$slug")
-    set slug (string replace -ra '-+' '-' -- "$slug")
-    set slug (string trim --chars '-' -- "$slug")
+    set slug (string replace --all --regex -- '[^a-z0-9 -]' '' "$slug")
+    set slug (string replace --all --regex -- ' +' '-' "$slug")
+    set slug (string replace --all --regex -- '-+' '-' "$slug")
+    set slug (string trim --chars='-' -- "$slug")
     echo "$slug"
 end
 
