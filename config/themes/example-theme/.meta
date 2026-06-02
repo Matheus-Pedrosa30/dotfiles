@@ -1,0 +1,10 @@
+name=Example Theme
+author=Matheus
+gtk-theme=Breeze
+icon-theme=kora
+cursor-theme=McMojave
+cursor-size=24
+qt-theme=MacTahoeDark
+color-scheme=MacTahoe-Dark
+look-and-feel=
+wallpaper=wallpaper/wallpaper.jpg

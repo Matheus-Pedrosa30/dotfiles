@@ -1,0 +1,28 @@
+# Logs and temporary files
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Secrets and private local data
+secret*
+secrets*
+*.secret
+*.key
+*.pem
+*.token
+.env
+.env.*
+
+# Local editor and OS metadata
+.DS_Store
+Thumbs.db
+.directory
+
+# Optional large wallpaper formats
+config/themes/*/wallpaper/*.png
+
+# Runtime/cache directories, if scripts add them later
+.cache/
+tmp/
