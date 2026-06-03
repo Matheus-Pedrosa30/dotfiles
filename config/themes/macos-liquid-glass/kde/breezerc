@@ -1,0 +1,13 @@
+[Common]
+OutlineEnabled=false
+OutlineIntensity=OutlineOff
+RoundedCorners=false
+ShadowSize=ShadowNone
+
+[Style]
+MenuOpacity=20
+
+[Windeco]
+BackgroundGradientIntensity=0
+BackgroundOpacity=10
+TitleBarFont=Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
