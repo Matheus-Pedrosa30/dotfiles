@@ -1,0 +1,17 @@
+[Desktops]
+Id_1=9d0da2af-f6ca-4bc4-96b5-245769ad5494
+Number=1
+Rows=1
+
+[Effect-overview]
+BorderActivate=9
+
+[Tiling][9d0da2af-f6ca-4bc4-96b5-245769ad5494][3d41b54e-63a2-469c-bcc9-9f578623a870]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Xwayland]
+Scale=1
+
+[org.kde.kdecoration2]
+library=org.kde.kwin.aurorae.v2
