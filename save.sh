@@ -62,8 +62,7 @@ function copy_file_if_exists
     end
 end
 
-echo -n "Theme name: "
-read theme_name
+read --prompt-str "Theme name: " theme_name
 set theme_name (string trim -- "$theme_name")
 
 if test -z "$theme_name"
@@ -81,8 +80,7 @@ end
 set theme_dir "$THEMES_DIR/$theme_slug"
 
 if test -e "$theme_dir"
-    echo -n "Theme '$theme_slug' already exists. [o]verwrite / [c]ancel? "
-    read overwrite_choice
+    read --prompt-str "Theme '$theme_slug' already exists. [o]verwrite / [c]ancel? " overwrite_choice
     set overwrite_choice (string lower -- (string trim -- "$overwrite_choice"))
 
     if test "$overwrite_choice" != "o"
@@ -96,8 +94,7 @@ end
 mkdir -p "$theme_dir/kde" "$theme_dir/gtk" "$theme_dir/kvantum" "$theme_dir/kitty" "$theme_dir/wallpaper"
 
 set wallpaper_meta ""
-echo -n "Wallpaper path (leave blank to skip): "
-read wallpaper_path
+read --prompt-str "Wallpaper path (leave blank to skip): " wallpaper_path
 set wallpaper_path (string trim -- "$wallpaper_path")
 
 echo
@@ -126,8 +123,7 @@ if test -e "$CONFIG_DIR/plasma-org.kde.plasma.desktop-appletsrc"
     echo "  ! kde/plasma-org.kde.plasma.desktop-appletsrc may contain wallpaper path references that can break on restore"
 end
 
-echo -n "Save global shortcuts? [y/N] "
-read shortcuts_choice
+read --prompt-str "Save global shortcuts? [y/N] " shortcuts_choice
 set shortcuts_choice (string lower -- (string trim -- "$shortcuts_choice"))
 
 if test "$shortcuts_choice" = "y"
